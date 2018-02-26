@@ -1,0 +1,4 @@
+annotation/index_umls.php - Se utiliza para indizar en Elasticsearch los conceptos de UMLS con sus lexicalizaciones en español.
+annotation/index_scielo.php - Se utiliza para indizar en Elasticsearch el corpus paralelo de abstracts de ScieLO en inglés y español.
+annotation/annotate_scielo_becas.php - Se utiliza para anotar los abstracts de ScieLO en inglés mediante el servicio Becas (bioinformatics.ua.pt/becas/#!/), de la Universidade de Aveiro
+annotation/annotate_scielo_spanish.php - Se utiliza para transferir las anotaciones del abstract en inglés al abstract en español.
