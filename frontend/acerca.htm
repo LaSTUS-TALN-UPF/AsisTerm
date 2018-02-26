@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 Admin Template</title>
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet">
+	
+	<!-- Template Styles -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	
+	<!-- CSS Reset -->
+	<link rel="stylesheet" href="css/normalize.css">
+	
+	<!-- Milligram CSS minified -->
+	<link rel="stylesheet" href="css/milligram.min.css">
+	
+	<!-- Main Styles -->
+	<link rel="stylesheet" href="css/styles.css">
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    
+	<link rel="stylesheet" href="css/scielo.css">        
+</head>
+
+<body>
+	<div class="navbar">
+		<div class="row">
+			<div class="column column-30 col-site-title"><a href="/scielo" class="site-title float-left">AsisTerm</a></div>
+			<div class="column column-40 col-search">
+        <form method="post" id="search-form" action="/scielo/index.php">
+          <a class="search-btn fa fa-search" onclick="submitSearchForm();"></a>
+          <input type="hidden" name="action" value="search"/>
+          <input id="search-field" type="text" name="search" placeholder="Buscar documentos en ScieLO..." />
+          <!--p class="field switch"-->
+          <div id="language-selection">          
+              <input type="radio" id="radio-es" name="lang" value="es" />Espa&ntilde;ol
+              <input type="radio" id="radio-en" name="lang" value="en" />Ingl&eacute;s
+          </div>
+        </form>
+			</div>
+			<div class="column column-30">
+          <a target="_new" href="http://taln.upf.edu/"><img id="logo-taln" src="images/taln.jpg" alt="TALN-UPF" class="circle float-left profile-photo" width="80" height="auto"></a>           
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div id="sidebar" class="column">
+			<h5>Navegaci&oacute;n</h5>
+			<ul>
+				<li><a href="/scielo"><em class="fa fa-home"></em> Inicio</a></li>
+				<li><a href="/scielo/acerca.htm"><em class="fa fa-pencil-square-o"></em> Acerca</a></li>
+        <!--
+				<li><a href="#charts"><em class="fa fa-bar-chart"></em> Charts</a></li>
+				<li><a href="#widgets"><em class="fa fa fa-clone"></em> Widgets</a></li>
+				<li><a href="#forms"><em class="fa fa-pencil-square-o"></em> Forms</a></li>
+				<li><a href="#alerts"><em class="fa fa-warning"></em> Alerts</a></li>
+				<li><a href="#buttons"><em class="fa fa-hand-o-up"></em> Buttons</a></li>
+				<li><a href="#tables"><em class="fa fa-table"></em> Tables</a></li>
+				<li><a href="#grid"><em class="fa fa-columns"></em> Grid</a></li>
+				<li><a href="#grid"><em class="fa"></em> Grid</a></li>
+        -->
+      </ul>
+      <hr>
+      <div id="about">
+<a href="https://www.upf.edu/web/taln/large-scale-text-understanding-systems" target="_new">Large-Scale Text Understanding Systems Lab (LaSTUS)</a><br>
+<a href="https://www.upf.edu/web/taln" target="_new">TALN-UPF</a>      
+      </div>
+		</div>
+		<section id="main-content" class="column column-offset-20">
+			<div class="row grid-responsive">
+				<div class="column page-heading">
+					<div class="large-card">
+						<p class="text-large">Acerca de AsisTerm</p>
+						<p>AsisTerm es un prototipo para la anotación automática de textos médicos en español y la expansión de definiciones desarrollado por <a target="_new" href="https://www.upf.edu/web/taln/large-scale-text-understanding-systems">LaSTUS-TALN-UPF</a> en el contexto de la <a target="_new" href="http://www.hackathonplantl.es/">II Hackathon de Tecnologías del Lenguaje</a>.</p>
+						<p>Actualmente, mediante esta herramienta es posible buscar y recuperar resúmenes del corpus paralelo (inglés-español) de <a target="_new" href="scielo.isciii.es">ScieLO</a> anotados con conceptos de <a target="_new" href="https://www.nlm.nih.gov/research/umls/">UMLS</a> y enriquecidos con definiciones en español obtenidas tanto de las fuentes de UMLS vía su <a href="https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/">metatesauro</a> como a través del servicio <a target="_new" href="https://medlineplus.gov/connect/service.html">MedlinePlus Connect</a>.</p>                        
+					</div>
+				</div>
+			</div>
+
+			<br><br><br><br><br>
+			<p class="credit"><small>HTML5 Admin Template by <a href="https://www.medialoot.com">Medialoot</a><small></p>
+
+        </section>
+	</div>	
+
+</body>
+</html> 

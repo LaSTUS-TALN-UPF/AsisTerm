@@ -19,13 +19,6 @@ $search_params = [
     'scroll' => ES_SCROLL_TIME,
     '_source_include' => ['id', 'abstract'],
     'body' => [
-    /*    
-      'query' => [
-        'ids' => [
-          'values' => ['S0212-16112010000900009'] // For testing
-        ]
-      ]
-      */
     ]
 ];
          
@@ -92,8 +85,8 @@ function annotateTerms($abstract) {
 function indexAnnotatedAbstract($annotated_abstract, $document_id) {
   global $client;
   $index_params = array(
-      'index' => ES_INDEX_ANNOTATIONS,
-      'type' => ES_TYPE_ANNOTATIONS,
+      'index' => ES_INDEX_ANNOTATIONS_ENGLISH,
+      'type' => ES_TYPE_ANNOTATIONS_ENGLISH,
       'id' => $document_id,  
       'body' => array('doc' => ['sentences' => $annotated_abstract], 'doc_as_upsert' => true)
   );    

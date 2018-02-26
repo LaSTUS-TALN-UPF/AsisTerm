@@ -16,7 +16,6 @@ if (!$mysqli->connect_errno) {
   // Get from MySQL concept IDs for concepts with strings in Spanish and index in Elasticsearch.
   mysqli_query($mysqli, "SET NAMES utf8");  
   $query = "select distinct CUI, STR from MRCONSO where LAT='SPA'";
-  //$query = "select distinct CUI, STR from MRCONSO where CUI='C0000833'";  
   if ($result_db = mysqli_query($mysqli, $query)) {
     while ($row_db = $result_db->fetch_row()) {
       $cui = $row_db[0];

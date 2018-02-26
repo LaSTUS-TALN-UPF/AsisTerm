@@ -1,0 +1,123 @@
+/* Language selector */
+.switch {
+    position: relative;
+    top: -55px;
+    left: 600px;
+}
+.cb-enable, .cb-disable, .cb-enable span, .cb-disable span { background: url(../images/switch.gif) repeat-x; display: block; float: left; }
+.cb-enable span, .cb-disable span { line-height: 30px; display: block; background-repeat: no-repeat; font-weight: bold; }
+.cb-enable span { background-position: left -90px; padding: 0 10px; }
+.cb-disable span { background-position: right -180px;padding: 0 10px; }
+.cb-disable.selected { background-position: 0 -30px; }
+.cb-disable.selected span { background-position: right -210px; color: #fff; }
+.cb-enable.selected { background-position: 0 -60px; }
+.cb-enable.selected span { background-position: left -150px; color: #fff; }
+.switch label { cursor: pointer; font-size: 1.3rem;}
+.switch input { display: none; }
+
+
+.card-block td {
+    font-size: smaller;
+}
+
+.document-title {
+    font-size: larger;
+    font-style: italic;    
+}
+
+.tooltip_templates {
+    display: none;
+}
+
+.tooltip {
+    background-color: #BBD3E6;
+    color: #0D4D7C;
+    border: 1px solid #AAC5EE;
+    cursor: pointer;    
+}
+
+.tooltip:hover {
+    background-color: #d5e1ea;
+    color: #0D4D7C;
+    border: 1px solid #AAC5EE;
+    cursor: pointer;    
+}
+
+.umls-cui {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: monospace;
+    font-size: larger;
+    color: #8059f5;    
+}
+
+.source-name {
+    margin: 0;
+    font-family: monospace;
+    font-size: larger;
+    color: #4e4079;
+}
+
+.source-concept {
+    background: #f4f5f6;
+    border-left: 0.3rem solid #9b4dca;
+    font-family: monospace, monospace;
+    font-size: 1em;    
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;    
+}
+
+.concept-link {
+    color: #458ec3;
+}
+
+.concept-definition {
+    font-size: 14px;    
+    font-family: monospace;
+    font-style: italic;
+}
+
+.concept-definition li {
+    margin-bottom: 0px;
+}
+
+.read-more {
+    background-color: #35cebe;
+    color: white;
+    border: 0.1rem solid #35cebe;
+    border-radius: 499rem;
+    padding: 1px;
+    cursor: pointer;
+}
+
+#language-selection {
+    font-size: smaller;
+    position: relative;
+    top: -50px;
+    left: 600px;
+}
+
+.has-definition {
+    background-color: #18f1da;
+    border: 1px solid #35cebe;    
+}
+
+.has-definition:hover {
+    background-color: #93efe5;
+    color: #0D4D7C;
+    border: 1px solid #AAC5EE;
+    cursor: pointer;    
+}
+
+.image-json {
+    height: 50px;
+    position: relative;
+    top: 38px;
+}
+
+#about{
+    font-size: smaller;
+    font-family: monospace;
+    font-style: italic;
+}
